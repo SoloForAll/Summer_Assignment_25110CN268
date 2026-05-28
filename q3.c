@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main() {
     int n, i;
-    long int fact = 1;
+    unsigned long long int fact = 1;
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -11,6 +11,6 @@ int main() {
     {
         fact = fact * i;
     }
-    printf("Factorial of %d is %ld", n, fact);
+    printf("Factorial of %d is %llu", n, fact);
     return 0;
 }
