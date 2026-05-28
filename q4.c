@@ -1,0 +1,17 @@
+// Program to count digits in a number.
+#include <stdio.h>
+int main() {
+    int n, count = 0;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    while(n != 0)
+    {
+        n = n / 10;
+        count++;
+    }
+
+    printf("Total digits in %d is %d", n, count);
+    return 0;
+}
